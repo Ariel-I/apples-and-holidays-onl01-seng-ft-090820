@@ -124,6 +124,22 @@ def all_winter_holiday_supplies(holiday_hash)
 end
 
 def all_supplies_in_holidays(holiday_hash)
+   {
+     :winter => {
+       :christmas => ["Lights", "Wreath"],
+       :new_years => ["Party Hats"]
+     },
+     :summer => {
+       :fourth_of_july => ["Fireworks", "BBQ"]
+     },
+     :fall => {
+       :thanksgiving => ["Turkey"]
+     },
+     :spring => {
+       :memorial_day => ["BBQ"]
+     }
+   }
+  
   holiday_hash.each do |season,holidays|
     puts "#{season.capitalize}:"
     holidays.each do |holiday,supplies|
