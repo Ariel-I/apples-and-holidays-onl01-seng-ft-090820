@@ -115,7 +115,7 @@ def all_winter_holiday_supplies(holiday_hash)
      }
    }
    
-  array = holiday_hash[:winter].each do |holiday,supllies|
+  array = holiday_hash[:winter].map do |holiday,supllies|
     supllies
   end 
   array.flatten
