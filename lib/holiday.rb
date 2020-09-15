@@ -165,7 +165,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.map do |holiday,supplies|
       holiday if supplies.include? ("BBQ")
     end 
-  end 
+  end.flatten.compact
       
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
