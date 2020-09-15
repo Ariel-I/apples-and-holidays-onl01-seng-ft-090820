@@ -73,6 +73,24 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
+  
+  {
+     :winter => {
+       :christmas => ["Lights", "Wreath"],
+       :new_years => ["Party Hats"]
+     },
+     :summer => {
+       :fourth_of_july => ["Fireworks", "BBQ"]
+     },
+     :fall => {
+       :thanksgiving => ["Turkey"]
+     },
+     :spring => {
+       :memorial_day => ["BBQ"]
+     }
+   }
+   
+   holiday_hash[:fall][3] = [:columbus_day => []]
   # code here
   # remember to return the updated hash
 
